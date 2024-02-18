@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlmostGen - Solo Development Business</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+
+    <nav class="bg-gray-900 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-white text-xl font-bold" href="#">AlmostGen</a>
+            <div class="flex items-center">
+                <a class="text-white mr-4" href="#">Home</a>
+                <a class="text-white" href="#projects">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="text-center py-20">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Welcome to AlmostGen</h1>
+            <p class="text-lg text-gray-700">Your destination for innovative solutions.</p>
+            <p>(all the underlined text is clickable, underlined text looks like <u><a href="/why/whywouldyouclickthis.html">This!</a></u>)</p>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <h3 class="font-bold text-lg mb-2"><u><a href="https://pika.rip">Pika.rip</a></u></h3>
+                    <p class="text-gray-700">I alongside my co owner "dorize" <u><a href="https://pika.rip/dorize" class="text-blue">[click here!]</a></u> have made a place where we can put anything web development related on one site, including a solo.to like bio system (comming soon™️), multiple showcases of fun and easy to do things with javascript and anything else we feel should be on there.</p>
+                </div>
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <h3 class="font-bold text-lg mb-2"><u><a href="https://oceansteal.net">Oceansteal.net</a></u></h3>
+                    <p class="text-gray-700">Oceansteal is my minecraft server that i have been working long and hard on, im expecting to get it out and 100% ready by 2025. oceansteal will feature all the classic minecraft game-modes that people love ex= Hardcore, Lifesteal, Earth, Survival and much more!</p>
+                </div>
+
+                <div class="border border-gray-300 rounded-lg p-4 shadow-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    <h3 class="font-bold text-lg mb-2">Check out my <u><a href="https://github.com/almostgen">Github!</a></u></h3>
+                    <p class="text-gray-700">This is where i have all of my open source projects, with everything from html to c#, there is something there that you will find of interest!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2024 AlmostGen. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
